@@ -1,3 +1,5 @@
+package D02_09;
+
 public class Bank {
 
     private BitArray arr; // 저장 공간 사용을 위한 외부 클래스의 인스턴스 선언

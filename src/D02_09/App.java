@@ -1,3 +1,5 @@
+package D02_09;
+
 public class App {
     // singleton 패턴
     private App() {

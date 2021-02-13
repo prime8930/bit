@@ -1,3 +1,5 @@
+package D02_09;
+
 public class BitArray {
 
     // 1. 멤버 필드 선언

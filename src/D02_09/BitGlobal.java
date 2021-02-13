@@ -1,3 +1,5 @@
+package D02_09;
+
 import java.util.*;
 
 public class BitGlobal {
