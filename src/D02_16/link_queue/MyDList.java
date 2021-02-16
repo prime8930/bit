@@ -1,6 +1,4 @@
-package D02_15.doubly;
-
-import D02_15.single.Node;
+package D02_16.link_queue;
 
 // step 1) 이중연결리스트, 노드 클래스 정의
 public class MyDList {
@@ -178,13 +176,13 @@ public class MyDList {
     // print method
     // head --> tail (next)
     public void selectAll() {
-        System.out.print("["+size+"] ");
+        System.out.print("["+size+"] front <- ");
         DNode cur = head;
         while (cur != null) {
-            System.out.print(cur.data + " -> ");
+            System.out.print(cur.data + " <- ");
             cur = cur.next;
         }
-        System.out.println("null");
+        System.out.println("rear");
     }
 
     // tail --> head (prev)
@@ -197,5 +195,10 @@ public class MyDList {
             cur = cur.prev;
         }
         System.out.println("null");
+    }
+
+    public void clear() {
+        head = tail = null;
+        size = 0;
     }
 }

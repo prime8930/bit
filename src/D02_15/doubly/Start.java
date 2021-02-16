@@ -1,5 +1,7 @@
 package D02_15.doubly;
 
+import D02_16.link_stack.MyDList;
+
 public class Start {
     public static void main(String[] args) {
         exam1();

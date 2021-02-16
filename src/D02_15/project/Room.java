@@ -50,7 +50,8 @@ public class Room {
 
     //게임방 퇴장
     public boolean gameRoomOut(int idx, int number) {
-        MyDList.DNode member = wait.select(number);
+        MyDList.DNode member = game1.select(number); // 수정 필요
+
         if (member == null) {
             System.out.println(number + "번 회원은 게임방" + idx + " 에 없습니다.");
             return false;
@@ -65,10 +66,9 @@ public class Room {
                 case 3 :
                     game3.removeRandom(member);
             }
+            insert(number);
+            System.out.println(number + "번 회원이 대기방으로 이동하였습니다.");
         }
-
-        insert(number);
-        System.out.println(number + "번 회원이 대기방으로 이동하였습니다.");
         return true;
     }
 
